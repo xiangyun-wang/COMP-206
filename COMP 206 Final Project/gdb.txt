@@ -1,0 +1,12 @@
+* words between curly brackets are explanations to the commands *
+
+First Part: 
+1. gcc -g -o debug_test labapp.c zoomrecs.c     (compile with -g option)
+2. gdb debug_test                               (start gdb)
+3. break generateAttendance                     (break when function "generateAttendance" is reached)
+4. run labdata.csv attendance.csv               (run with desired input, and it would stop when function "generateAttendance" is reached)
+
+Seocnd Part:
+1. print head           ("head" is passed to "generateAttendance", check to see if it is NULL)
+2. next                 (continue doing this command till the first line that uses the head of the linked list)
+3. print head           (print the address pointed by the head of the linked list, to check if it is NULL)
